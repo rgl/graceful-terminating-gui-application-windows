@@ -42,7 +42,7 @@ void LOG(const char *format, ...) {
     time(&t);
     char buffer[20];
     strftime(buffer, 20, "%Y-%m-%d %H:%M:%S", localtime(&t));
-    FILE *log = fopen("app.log", "a+");
+    FILE *log = fopen("graceful-terminating-gui-application-windows.log", "a+");
     fprintf(log, "%s ", buffer);
     va_list args;
     va_start(args, format);

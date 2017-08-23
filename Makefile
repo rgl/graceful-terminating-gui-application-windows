@@ -8,6 +8,6 @@ graceful-terminating-gui-application-windows.zip: graceful-terminating-gui-appli
 	zip -9 $@ $<
 
 clean:
-	rm -f graceful-terminating-gui-application-windows.exe graceful-terminating-gui-application-windows.zip
+	rm -f graceful-terminating-gui-application-windows.*
 
 .PHONY: all clean
