@@ -71,7 +71,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 }
 
 int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLine, int nCmdShow) {
-    LOG("Started\n");
+    LOG("Running (pid=%d)...\n", GetCurrentProcessId());
 
     int n = __argc == 2 ? _wtoi(__wargv[1]) : 10;
 
